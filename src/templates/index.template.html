@@ -1,0 +1,106 @@
+@@include('./src/templates/_head.html')
+<body>
+
+    @@include('./src/templates/_nav.html')
+    <div class="container-fluid hero-container">
+        <div class="row">
+            <div class="hero-copy-container text-center col-md-10 col-md-offset-1">
+                <h1>Open measurement and feedback tools for human interaction</h1>
+
+                <p class="lead">We're building new research tools to measure and augment
+                human interaction in real-time, leading to better group
+                decision-making, trust, and engagement.</p>
+
+                <!-- <p>There's a new science of measuring and augmenting human
+                interaction and the wild, and we're building research tools to
+                help us get to the next frontier.</p> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row feature-row">
+            <div class="col-md-6 text-center">
+                <a href="rhythm-server" class="section-title-link"><h1>Build with Rhythm</h1></a>
+                <p class="lead">
+                    Click below to learn how to build your own tool
+                    that uses the Rhythm Framework, or scroll down to
+                    learn about ongoing projects that use the
+                    platform.
+                </p>
+                <button type="button" class="btn btn btn-info">Build something now</button>
+            </div>
+            <div class="col-md-6 text-center">
+                <a href="rhythm-server" class="section-title-link"><h1>Try Breakout Now</h1></a>
+                <p class="lead">
+                    Click below to start a Google Hangout with the <a href="/breakout.html">Breakout</a>
+                    tool installed. Built with the Rhythm framework,
+                    Breakout helps teams communicate more effectively
+                    using real-time ambient feedback.
+                </p>
+                <div class="g-hangout" data-render="createhangout" data-initial_apps="[{ app_id : '381239548613', 'app_type' : 'ROOM_APP' }]">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row feature-row">
+            <div class="col-md-6">
+                <a href="/open-badges" class="section-title-link"><h1>Open Badges</h1></a>
+                <p class="lead">Wearable sensors for the social world.</p>
+                <p class="lead">
+                    Rhythm Open Badges is an open-source
+                    software/hardware project that aims to make it
+                    easier for researchers everywhere to
+                    quantitatively measure social interactions.
+                </p>
+                <p class="lead">
+                    The open-source hardware badges can be worn by
+                    participants around their necks or clipped to
+                    their clothing, and measures speaking activity and
+                    proximity to other badges. 
+                </p>
+                <button type="button" class="btn btn-outline btn-primary">Learn More</button>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/badge-illustration.png" id="badge-img" class="img-responsive center-block" alt="Open Badge Prototype">
+            </div>
+        </div>
+        <hr>
+        <div class="row feature-row">
+            <div class="col-md-6">
+                <img src="assets/good-screenshot1.png" id="breakout-img" class="img-responsive center-block" alt="Open Badge Prototype">
+            </div>
+            <div class="col-md-6">
+                <a href="breakout.html" class="section-title-link"><h1 class="">Breakout</h1></a>
+                <p class="lead">
+                    Instrumenting online communication.
+                </p>
+                <p class="lead">
+                    Rhythm Breakout is a software platform for
+                    collecting and analyzing online team communication
+                    over Google Hangout. Researchers are currently
+                    using Breakout to better understand the nature of
+                    team intelligence, human communication, and peer
+                    learning.
+                </p>
+                <a href="/breakout.html"> <button type="button" class="btn btn-outline btn-primary">Learn More</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    @@include('./src/templates/_footer.html')
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="lib/jquery/dist/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>

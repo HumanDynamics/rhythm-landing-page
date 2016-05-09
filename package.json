@@ -1,0 +1,21 @@
+{
+  "name": "rhythm-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-bower-files": "^0.2.7",
+    "gulp-file-include": "^0.13.7",
+    "gulp-less": "^3.0.5",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
