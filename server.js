@@ -6,11 +6,6 @@ var port = 2222
 var app = express()
 app.use(express.static(path.join(__dirname, '/www')))  // use static files in ROOT/www folder
 
-
-/* app.get('/', function (req, res) {
-   res.send('hi!')
-   }) */
-
 app.get('/breakout', function (req, res) {
   res.sendFile(path.join(__dirname, 'www/breakout.html'))
 })
