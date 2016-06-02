@@ -40,7 +40,7 @@
                     Breakout helps teams communicate more effectively
                     using real-time ambient feedback.
                 </p>
-                <div class="g-hangout" data-render="createhangout" data-initial_apps="[{ app_id : '547143173876', 'app_type' : 'ROOM_APP' }]">
+                <div class="g-hangout" data-render="createhangout" data-initial_apps="[{ app_id : '<%= hangoutAppId %>', start_data: {apikey: '<%= authToken %>'}, 'app_type' : 'ROOM_APP' }]">
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
         <hr>
         <div class="row feature-row">
             <div class="col-md-6">
-                <a href="/open-badges" class="section-title-link"><h1>Open Badges</h1></a>
+                <a href="openbadge.tml" class="section-title-link"><h1>Open Badges</h1></a>
                 <p class="lead">Wearable sensors for the social world.</p>
                 <p class="lead">
                     Rhythm Open Badges is an open-source

@@ -5,7 +5,8 @@ const gulpBowerFiles = require('gulp-bower-files')
 const path = require('path')
 const fileinclude = require('gulp-file-include')
 const rename = require('gulp-rename')
-const notify = require('gulp-notify')
+const template = require('gulp-template')
+require('dotenv').config()
 
 // compile into `www` directory
 var dest = './www'
@@ -22,8 +23,12 @@ gulp.task('build-less', function () {
              .pipe(gulp.dest(dest + '/css'))
 })
 
+console.log(process.env.HANGOUT_APP_ID, process.env.AUTH_TOKEN)
+
 gulp.task('fileinclude', function () {
   return gulp.src(path.join(paths.templates, '*.template.html'))
+             .pipe(template({authToken: process.env.AUTH_TOKEN,
+                             hangoutAppId: process.env.HANGOUT_APP_ID}))
              .pipe(fileinclude({
                prefix: '@@',
                basepath: '@root'
@@ -35,7 +40,6 @@ gulp.task('fileinclude', function () {
                extname: '.html'
              }))
              .pipe(gulp.dest(dest))
-             .pipe(notify({ message: 'Includes: included' }))
 })
 
 /*
